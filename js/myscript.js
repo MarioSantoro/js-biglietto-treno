@@ -1,4 +1,4 @@
-
+function calc(){
 let sale;
 let result;
 
@@ -24,7 +24,8 @@ if(passengerAge < 18){
     // Il passeggero non rientra nella categoria per ricevere lo sconto
     result = TicketCost;
     result = result.toFixed(2);
-    document.getElementById("sconto").innerHTML = "Non hai diritto a nessun tipo di sconto ----- Sfigato!!"
+    document.getElementById("sconto").innerHTML = "Non hai diritto a nessun tipo di sconto ----- Sfigato!!";
 }
+document.getElementById("cost").innerHTML = "Il tuo biglietto adesso costerà: " + result + "€ !!";
 
-document.getElementById("cost").innerHTML += " " + result + "€ !!"
+}
